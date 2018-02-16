@@ -22,6 +22,9 @@ class App extends Component {
    })
   };
   render() {
+    const style ={
+      color: 'red'
+    };
     return (
       <div className="App">
         <header className="App-header">
@@ -33,7 +36,7 @@ class App extends Component {
         </p>
 
         <UserOutPut username={this.state.accounts[0].username}/>
-        <UserInPut change={this.manipulateStateHandler} username={this.state.accounts[0].username} />
+        <UserInPut style={style} change={this.manipulateStateHandler} username={this.state.accounts[0].username} />
 
         <UserOutPut username={this.state.accounts[1].username} />
         <UserInPut username={this.state.accounts[1].username} />
