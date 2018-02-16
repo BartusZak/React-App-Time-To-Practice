@@ -11,6 +11,9 @@ class App extends Component {
       { username: "TurasPeKa"}
     ]
   };
+   manipulateStateHandler = () => {
+    
+   };
   render() {
     return (
       <div className="App">
