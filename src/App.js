@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserOutPut from './UserOutPut/UserOutPut';
+import UserInPut from './UserInPut/UserInPut';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,7 +13,7 @@ class App extends Component {
     ]
   };
    manipulateStateHandler = () => {
-    
+
    };
   render() {
     return (
@@ -25,8 +26,12 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <UserOutPut username={this.state.accounts[0].username}/>
+        <UserInPut change={this.manipulateStateHandler} />
         <UserOutPut username={this.state.accounts[1].username}/>
+        <UserInPut change={this.manipulateStateHandler} />
         <UserOutPut username={this.state.accounts[2].username}/>
+        <UserInPut change={this.manipulateStateHandler} />
+
       </div>
     );
   }
