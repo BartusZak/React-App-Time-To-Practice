@@ -1,7 +1,12 @@
 import React from 'react';
 
 const useroutput = () => {
-    return 
+    return (
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+    )
 };
 
 export default useroutput;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const userinput = () => {
-    return 
+    return <input/>
 };
 
 export default userinput;
