@@ -12,9 +12,15 @@ class App extends Component {
       { username: "TurasPeKa"}
     ]
   };
-   manipulateStateHandler = () => {
-
-   };
+   manipulateStateHandler = (event) => {
+    this.setState({
+      accounts: [
+        { username: event.target.value},
+        { username: "Noziak"},
+        { username: "TurasPeKa"}
+      ]
+   })
+  };
   render() {
     return (
       <div className="App">
@@ -25,12 +31,15 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
         <UserOutPut username={this.state.accounts[0].username}/>
         <UserInPut change={this.manipulateStateHandler} />
+
         <UserOutPut username={this.state.accounts[1].username}/>
-        <UserInPut change={this.manipulateStateHandler} />
+        <UserInPut />
+
         <UserOutPut username={this.state.accounts[2].username}/>
-        <UserInPut change={this.manipulateStateHandler} />
+        <UserInPut />
 
       </div>
     );
