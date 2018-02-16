@@ -4,6 +4,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    accounts: [
+      { username: "BartusZak"},
+      { username: "Noziak"},
+      { username: "TurasPeKa"}
+    ]
+  };
   render() {
     return (
       <div className="App">
@@ -14,9 +21,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <UserOutPut username="BartusZak"/>
-        <UserOutPut username="Noziak"/>
-        <UserOutPut username="TurasPeKa"/>
+        <UserOutPut username={this.state.accounts[0].username}/>
+        <UserOutPut username={this.state.accounts[1].username}/>
+        <UserOutPut username={this.state.accounts[2].username}/>
       </div>
     );
   }
