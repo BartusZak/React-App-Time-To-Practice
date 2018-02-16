@@ -3,8 +3,8 @@ import React from 'react';
 const useroutput = () => {
     return (
         <div>
-            <p></p>
-            <p></p>
+            <p>Pierwszy paragraf</p>
+            <p>Drugi paragraf</p>
         </div>
     )
 };
