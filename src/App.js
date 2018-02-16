@@ -33,13 +33,13 @@ class App extends Component {
         </p>
 
         <UserOutPut username={this.state.accounts[0].username}/>
-        <UserInPut change={this.manipulateStateHandler} />
+        <UserInPut change={this.manipulateStateHandler} username={this.state.accounts[0].username} />
 
-        <UserOutPut username={this.state.accounts[1].username}/>
-        <UserInPut />
+        <UserOutPut username={this.state.accounts[1].username} />
+        <UserInPut username={this.state.accounts[1].username} />
 
         <UserOutPut username={this.state.accounts[2].username}/>
-        <UserInPut />
+        <UserInPut username={this.state.accounts[2].username} />
 
       </div>
     );
